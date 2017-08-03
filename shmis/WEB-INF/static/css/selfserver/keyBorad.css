@@ -1,0 +1,9 @@
+@charset "gb2312";
+
+#kb{ position:absolute;width:888px; height:250px; 
+padding:0; margin:0;left:68px;top:313px;
+}
+.kB_Back { width:888px; height:280px; padding:0; margin:0; background-image:url(/shmis/images/selfserver/keyboard-bg.png); position:absolute}
+.key{ padding:0; margin:0; float:left; position:relative }
+#list_area{padding-right: 2px;font-family:Î¢ÈíÑÅºÚ;font-size:22px; width:888px;  padding-left: 2px; font-size: 180%; padding-bottom: 2px; padding-top: 2px; position:absolute; left:80px;top:600px}
+#code_field{padding-right: 2px;width:888px;font-family:Î¢ÈíÑÅºÚ;font-size:22px;  padding-left: 2px; font-size: 180%; padding-bottom: 2px; padding-top: 2px; position:absolute; left:120px;top:555px}

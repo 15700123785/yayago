@@ -1,0 +1,223 @@
+﻿
+body 
+{
+	background-image:url(/shmis/images/selfserver/06.png);
+	background-repeat:no-repeat;
+	width:1024px;
+	height:768px;
+	font-family:微软雅黑;
+}
+
+#btnyyqh
+{
+	position:absolute;
+	background-image:url('/shmis/images/selfserver/btn.jpg');
+	background-repeat:no-repeat;
+	top: 699px;
+	left: 22px;
+	width: 177px;
+	height: 47px;
+	cursor:pointer;
+	
+}
+#btncsry
+{
+	position:absolute;
+	background-image:url('/shmis/images/selfserver/btn.jpg');
+	background-repeat:no-repeat;
+	top: 697px;
+	left: 834px;
+	width: 177px;
+	height: 47px;
+	cursor:pointer;
+}
+#btnPrint
+{
+	position:absolute;
+	background-image:url('/shmis/images/selfserver/btn.jpg');
+	background-repeat:no-repeat;
+	top: 698px;
+	left: 597px;
+	width: 178px;
+	height: 49px;
+	cursor:pointer;
+}
+
+#sqrxm
+{
+	position:absolute;
+	width:153px;
+	top: 635px;
+	left: 585px;
+	height: 29px;
+	right: 318px;
+}
+
+#sfzhm
+{
+	position:absolute;
+	width:134px;
+	top: 634px;
+	left: 778px;
+	height: 31px;
+}
+
+#zfqkcxjl
+{
+	position:absolute;
+	width:698px;
+	top: 97px;
+	left: 288px;
+	height: 589px;
+	overflow:hidden;
+	text-align:center;
+}
+#Div1
+{
+	position:absolute;
+	width:933px;
+	top: 180px;
+	left: 50px;
+	height: 416px;
+	overflow:hidden;
+}
+
+#title
+{
+	position:absolute;
+	width:889px;
+	top: 186px;
+	left: 68px;
+	height: 26px;
+	overflow:auto;
+}
+
+#down
+{
+	position:absolute;
+	top: 506px;
+	left: 919px;
+	height: 36px;
+	width: 80px;
+	text-align:center;
+	color:White;
+	background-image:url('/shmis/images/selfserver/btn.jpg');
+	background-repeat:no-repeat;
+	cursor:pointer;
+	line-height:36px;
+}
+
+#up
+{
+	position:absolute;
+	top: 317px;
+	left: 919px;
+	height: 36px;
+	line-height:36px;
+	width: 80px;
+	text-align:center;
+	color:White;
+	background-image:url('/shmis/images/selfserver/btn.jpg');
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+
+#pages
+{
+	position:absolute;
+	top: 602px;
+	left: 86px;
+}
+
+#btnPrintAll
+{
+	position:absolute;
+	background-image:url('/shmis/images/selfserver/btn.jpg');
+	background-repeat:no-repeat;
+	top: 699px;
+	left: 404px;
+	width: 178px;
+	height: 49px;
+	cursor:pointer;
+}
+
+.btn_back
+{
+	background-image:url('/shmis/images/selfserver/btn.jpg');
+	background-repeat:no-repeat;
+}
+
+.BackSY
+{
+	position:absolute;
+	background-image:url('/shmis/images/selfserver/btn.jpg');
+	background-repeat:no-repeat;
+	top: 697px;
+	left: 834px;
+	width: 165px;
+	height: 50px;
+	cursor:pointer;
+}
+
+#Menu
+{
+	position:absolute;
+	top: 99px;
+	left: 19px;
+	width: 251px;
+	height: 460px;
+	overflow:hidden;
+	
+}
+
+.Menu_title
+{
+	background-image:url('/shmis/images/selfserver/btn.jpg');
+	color:Black;
+	font-family:微软雅黑;
+	height:40px;
+	cursor:pointer;
+	text-align:center;
+	font-size:12px;
+	width:300px;
+}
+
+.bg1{ display: none;  position: absolute;  top: 0%;  left: 0%;  width: 100%;  height: 100%;  background-color: black;  z-index:1001;  -moz-opacity: 0.7;  opacity:.70;  filter: alpha(opacity=20);}
+.show1{display: none;  position: absolute;  top: 25%;  left: 22%;  width: 53%;  height: 49%;  padding: 8px;  border: 8px solid #E8E9F7;  background-color: white;  z-index:1002;  overflow: auto;}
+
+#btnBack
+{
+	position:absolute;
+	background-image:url('/shmis/images/selfserver/btn.jpg');
+	background-repeat:no-repeat;
+	top: 688px;
+	left: 792px;
+	width: 165px;
+	height: 50px;
+	cursor:pointer;
+	
+}
+
+
+.btn
+{
+	background-image:url('/shmis/images/selfserver/msgbox_up.png');
+	background-repeat:no-repeat;
+	color:White;
+	font-family:微软雅黑;
+	height:53px;
+	cursor:pointer;
+	text-align:center;
+	font-size:18px;
+	width:150px;
+	line-Height:53px;
+	vertical-align:middle;
+}
+
+.txm
+{
+	width:300px;
+	height:47px;
+	margin-left:270px;
+}
+

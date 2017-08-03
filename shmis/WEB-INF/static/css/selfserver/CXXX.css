@@ -1,0 +1,159 @@
+﻿body
+{
+	background-image: url('/shmis/images/selfserver/07.png');
+	background-repeat: no-repeat;
+	width: 1024px;
+	height: 768px;
+	font-family: 微软雅黑;
+}
+
+#btn
+{
+	position: absolute;
+	background-image: url('/shmis/images/selfserver/btn.jpg' );
+	background-repeat: no-repeat;
+	top: 688px;
+	left: 562px;
+	width: 165px;
+	height: 50px;
+	cursor: pointer;
+}
+
+
+#btnNo
+{
+	position: absolute;
+	top: 688px;
+	left: 793px;
+	width: 207px;
+	height: 57px;
+	cursor: pointer;
+}
+
+.deleteImg
+{
+	background-image: url(  '/shmis/images/selfserver/delete.png' );
+	background-repeat: no-repeat;
+	font-family: 微软雅黑;
+	height: 50px;
+}
+
+.addImg
+{
+	background-image: url(  '/shmis/images/selfserver/add_wcnr.png' );
+	background-repeat: no-repeat;
+	font-family: 微软雅黑;
+	height: 37px;
+}
+
+
+#tab
+{
+	position: absolute;
+	top: 288px;
+	width: 810px;
+	left: 100px;
+}
+
+.xm
+{
+	margin-top: -10px;
+	width: 160px;
+}
+
+.t1
+{
+	width: 83px;
+}
+.t2
+{
+	width: 154px;
+	text-align: center;
+}
+.t3
+{
+	width: 149px;
+}
+.t4
+{
+	width: 250px;
+	text-align: center;
+}
+.t5
+{
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+}
+
+table
+{
+	width: 850px;
+	font-family: 微软雅黑;
+	font-size: 22px;
+}
+
+td
+{
+	height: 50px;
+}
+#btnAddcnr
+{
+	position: absolute;
+	width: 165px;
+	left: 778px;
+	top: 130px;
+}
+
+#btnAddwcnr
+{
+	position: absolute;
+	left: 777px;
+	top: 210px;
+	width: 165px;
+}
+
+#addInfo
+{
+	position: absolute;
+	left: 71px;
+	top: 253px;
+	width: 670px;
+	height: 50px;
+	background-image: url('/shmis/images/selfserver/add_wcnr.png');
+	background-repeat: no-repeat;
+	display: none;
+}
+
+
+#qx
+{
+	position: absolute;
+	width: 124px;
+	height: 44px;
+	line-height: 44px;
+	color: White;
+	background-image: url('/shmis/images/selfserver/btn.jpg');
+	text-align: center;
+	font-size:25px;
+	font-family: 微软雅黑;
+	left: 726px;
+	top: 1px;
+	cursor: pointer;
+}
+
+#zj
+{
+	position: absolute;
+	width: 124px;
+	height: 44px;
+	left: 677px;
+	top: 5px;
+	cursor: pointer;
+	background-image: url('/shmis/images/selfserver/btn.jpg');
+	line-height: 44px;
+	color: White;
+	font-family: 微软雅黑;
+	text-align: center;
+	font-size:25px;
+}

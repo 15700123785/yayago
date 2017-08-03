@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context.xsd
+         http://www.springframework.org/schema/tx
+  	 http://www.springframework.org/schema/tx/spring-tx.xsd
+         http://www.springframework.org/schema/aop
+   	 http://www.springframework.org/schema/aop/spring-aop.xsd
+  	 http://www.springframework.org/schema/mvc
+         http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<context:property-placeholder location="classpath:db.properties" />
+	<context:annotation-config />
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="${db.url}" />
+		<property name="username" value="${db.username}" />
+		<property name="password" value="${db.password}" />
+		<property name="initialSize" value="5" />
+		<property name="maxActive" value="20" />
+		<property name="maxIdle" value="5" />
+		<property name="testOnBorrow" value="true" />
+		<property name="testOnReturn" value="true" />
+		<property name="testWhileIdle" value="true" />
+		<property name="timeBetweenEvictionRunsMillis" value="1800000" />
+		<property name="numTestsPerEvictionRun" value="3" />
+		<property name="minEvictableIdleTimeMillis" value="1800000" />
+		<property name="validationQuery" value="SELECT 1" />
+	</bean>
+	<bean id="ocdataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url" value="${oc.url}" />
+		<property name="username" value="${oc.username}" />
+		<property name="password" value="${oc.password}" />
+		<property name="initialSize" value="5" />
+		<property name="maxActive" value="20" />
+		<property name="maxIdle" value="5" />
+		<property name="testOnBorrow" value="true" />
+		<property name="testOnReturn" value="true" />
+		<property name="testWhileIdle" value="true" />
+		<property name="timeBetweenEvictionRunsMillis" value="1800000" />
+		<property name="numTestsPerEvictionRun" value="3" />
+		<property name="minEvictableIdleTimeMillis" value="1800000" />
+	</bean>
+<!-- 	<bean id="ocSessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean"> -->
+<!-- 		<property name="dataSource" ref="ocdataSource"/> -->
+<!-- 		<property name="packagesToScan">  -->
+<!-- 			<array> -->
+<!-- 				<value>com.hzmoko.model.accessor</value> -->
+<!-- 				<value>com.hzmoko.model</value> -->
+<!-- 				<value>com.hzmoko.model.business</value> -->
+<!-- 			</array> -->
+<!-- 		</property>  -->
+<!-- 		<property name="hibernateProperties"> -->
+<!-- 			<props> -->
+<!-- 				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop> -->
+<!-- 				<prop key="hibernate.dialect">${dialect.oracle}</prop> -->
+<!-- 				<prop key="hibernate.format_sql">true</prop> -->
+<!-- 				<prop key="hibernate.current_session_context_class">${hibernate.current_session_context_class}</prop> -->
+<!-- 				<prop key="hibernate.current_session_context_class">org.springframework.orm.hibernate4.SpringSessionContext -->
+<!-- 				</prop> -->
+<!-- 				<prop key="connection.autocommit">true</prop> -->
+<!-- 				<prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop> -->
+<!-- 				<prop key="hibernate.connection.pool_size">20</prop> -->
+<!-- 				<prop key="hibernate.max_fetch_depth">2</prop> -->
+<!-- 			</props> -->
+<!-- 		</property> -->
+<!-- 	</bean> -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="packagesToScan">
+			<array>
+				<value>com.hzmoko.model.sys</value>
+				<value>com.hzmoko.model</value>
+				<value>com.hzmoko.model.business</value>
+			</array>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<!-- <prop key="hibernate.current_session_context_class">${hibernate.current_session_context_class}</prop> -->
+				<prop key="hibernate.current_session_context_class">org.springframework.orm.hibernate4.SpringSessionContext
+				</prop>
+				<prop key="connection.autocommit">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
+				<prop key="hibernate.connection.pool_size">20</prop>
+				<prop key="hibernate.max_fetch_depth">2</prop>
+
+				<!-- <prop key="hibernate.query.substitutions">${hibernate.query.substitutions}</prop> -->
+				<!-- <prop key="hibernate.default_batch_fetch_size">${hibernate.default_batch_fetch_size}</prop> -->
+				<!-- <prop key="hibernate.max_fetch_depth">${hibernate.max_fetch_depth}</prop> -->
+				<!-- <prop key="hibernate.generate_statistics">${hibernate.generate_statistics}</prop> -->
+				<!-- <prop key="hibernate.bytecode.use_reflection_optimizer">${hibernate.bytecode.use_reflection_optimizer}</prop> -->
+
+				<!-- <prop key="hibernate.cache.use_second_level_cache">${hibernate.cache.use_second_level_cache}</prop> -->
+				<!-- <prop key="hibernate.cache.use_query_cache">${hibernate.cache.use_query_cache}</prop> -->
+				<!-- <prop key="hibernate.cache.region.factory_class">${hibernate.cache.region.factory_class}</prop> -->
+				<!-- <prop key="net.sf.ehcache.configurationResourceName">${net.sf.ehcache.configurationResourceName}</prop> -->
+				<!-- <prop key="hibernate.cache.use_structured_entries">${hibernate.cache.use_structured_entries}</prop> -->
+			</props>
+		</property>
+	</bean>
+
+	<!-- 添加注解包 -->
+	<context:component-scan base-package="com.hzmoko.sys" />
+	<context:component-scan base-package="com.hzmoko.controller"/>
+	<context:component-scan base-package="com.hzmoko.business"/>
+	<!-- OpenSessionInView配置 -->
+	<bean id="openSessionInViewInterceptor"
+		class="org.springframework.orm.hibernate4.support.OpenSessionInViewInterceptor">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<!-- 配置service层 添加服务层bean，配置事务 -->
+	<bean id="transactionManager"
+		class=" org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+<!-- 	<bean id="octransactionManager" -->
+<!-- 		class=" org.springframework.orm.hibernate4.HibernateTransactionManager"> -->
+<!-- 		<property name="sessionFactory" ref="ocSessionFactory" /> -->
+<!-- 	</bean> -->
+	<!-- 在注解中具体定义事务的属性 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+<!-- 	<tx:annotation-driven transaction-manager="octransactionManager"/> -->
+
+
+	<!--启动mvc的注解 -->
+	<mvc:annotation-driven />
+	<!--启动上下文的注解 -->
+
+	<!-- 配置静态资源文件 -->
+	<mvc:resources location="/WEB-INF/static/images/"
+		mapping="/images/**" />
+	<mvc:resources location="/WEB-INF/static/css/" mapping="/css/**" />
+	<mvc:resources location="/WEB-INF/static/js/" mapping="/js/**" />
+	<mvc:resources location="/WEB-INF/static/json/" mapping="/json/**" />
+	<mvc:resources location="/WEB-INF/static/img/" mapping="/img/**" />
+	<mvc:resources location="/WEB-INF/static/html/" mapping="/html/**"></mvc:resources>
+	<!-- 视图配置 json配置 -->
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<ref bean="mappingJacksonHttpMessageConverter" />
+			</list>
+		</property>
+	</bean>
+	<bean id="mappingJacksonHttpMessageConverter"
+		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+		<property name="supportedMediaTypes">
+			<list>
+				<value>application/json;charset=UTF-8</value>
+			</list>
+		</property>
+	</bean>
+	<!-- 解决jsp视图 -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	<!-- 解决文件上传下载 -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="defaultEncoding" value="utf-8" />
+		<property name="maxUploadSize" value="1073741824"></property>
+	</bean>
+
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+		<property name="interceptors">
+			<list>
+				<ref bean="openSessionInViewInterceptor" />
+			</list>
+		</property>
+	</bean>
+    <!-- 配置bean的认证 -->
+<!--     <bean id="validator" -->
+<!--     class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/> -->
+
+</beans>

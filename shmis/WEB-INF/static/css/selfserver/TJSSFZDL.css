@@ -1,0 +1,129 @@
+﻿body
+{
+	background-image: url(/shmis/images/selfserver/02.png);
+	background-repeat: no-repeat;
+	width: 1024px;
+	height: 768px;
+	font-family: 微软雅黑;
+}
+
+#btnNext
+{
+	position: absolute;
+	background-image: url( '/shmis/images/selfserver/btn.jpg' );
+	background-repeat: no-repeat;
+	top: 689px;
+	left: 563px;
+	width: 165px;
+	height: 50px;
+	cursor: pointer;
+}
+
+#xm
+{
+	position: absolute;
+	width: 232px;
+	top: 226px;
+	left: 204px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+}
+
+#xb
+{
+	position: absolute;
+	width: 83px;
+	top: 226px;
+	left: 535px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+}
+
+#cs
+{
+	position: absolute;
+	width: 232px;
+	top: 275px;
+	left: 204px;
+	height: 35px;
+	right: 536px;
+	text-align: center;
+	line-height: 35px;
+}
+
+#mz
+{
+	position: absolute;
+	width: 83px;
+	top: 275px;
+	left: 535px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+}
+
+#dz
+{
+	position: absolute;
+	width: 414px;
+	top: 326px;
+	left: 204px;
+	height: 98px;
+	text-align: center;
+	line-height: 98px;
+}
+
+#sfzhm
+{
+	position: absolute;
+	width: 414px;
+	top: 436px;
+	left: 204px;
+	height: 35px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 35px;
+}
+
+#qfjg
+{
+	position: absolute;
+	width: 414px;
+	top: 487px;
+	left: 204px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+}
+
+#yxqx
+{
+	position: absolute;
+	width: 414px;
+	top: 537px;
+	left: 204px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+}
+
+input
+{
+	font-family: 微软雅黑;
+	font-size: 15px;
+	vertical-align: middle;
+}
+
+toback
+{
+	position: absolute;
+	background-image: url( '/shmis/images/selfserver/btn.jpg' );
+	background-repeat: no-repeat;
+	top: 688px;
+	left: 792px;
+	width: 165px;
+	height: 50px;
+	cursor: pointer;
+}

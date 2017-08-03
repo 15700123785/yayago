@@ -1,0 +1,31 @@
+﻿body 
+{
+	background-image:url(/shmis/images/selfserver/04.png);
+	background-repeat:no-repeat;
+	width:1024px;
+	height:768px;
+	font-family:微软雅黑;
+}
+
+
+#backContent
+{
+	position:absolute;
+	top: 86px;
+	left: 5px;
+	height: 679px;
+	width: 1015px;
+	text-align:center;
+}
+
+.btn
+{
+	background-image:url(/shmis/images/selfserver/msgbox_up.png);
+	background-repeat:no-repeat;
+	width:153px;
+	height:53px;
+	text-align:center;
+	line-height:53px;
+	color:White;
+	cursor:pointer;
+}

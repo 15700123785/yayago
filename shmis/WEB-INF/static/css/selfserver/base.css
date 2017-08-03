@@ -1,0 +1,50 @@
+﻿#timeoutbox
+{
+	position:absolute;
+	width:70px;
+	top: 90px;
+	left: 940px;
+	color:White;
+	display:none;
+	text-align:right;
+}
+
+#outsec
+{
+	color:Red;
+	font-size:30px;
+}
+
+#btnBackSY
+{
+	position:absolute;
+	background-image:url('/shmis/images/selfserver/btn.jpg');
+	background-repeat:no-repeat;
+	top: 688px;
+	left: 792px;
+	width: 165px;
+	height: 50px;
+	cursor:pointer;
+	
+}
+
+.btncontent
+{
+	margin-top:8px;
+	font-family:微软雅黑;
+	font-size:25px;
+	color:White;
+	text-align:center;
+}
+
+#btnBack
+{
+	position:absolute;
+	background-image:url('/shmis/images/selfserver/btn.jpg');
+	background-repeat:no-repeat;
+	top: 688px;
+	left: 792px;
+	width: 165px;
+	height: 50px;
+	cursor:pointer;
+}

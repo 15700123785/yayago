@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>无标题页</title>
+    <script type="text/javascript">
+//      window.onload = function () {
+// 	$.ajax({
+// 		url:"/shmis/background/selfservermanager/data/",
+// 		data:{
+// 		   code:'hz8080'
+// 		}, 
+// 		success:function(v) {
+// // 			console.log(v);
+// 			changeHtml("#xtmc",v[0].selfServerConfig.deptName);
+// 			changeHtml("#show",v[0].selfServerConfig.motto);
+// 			changeHtml("#hysy",v[0].selfServerConfig.welcometitle);
+// // 			console.log(v[0].selfServerConfig);
+// 			$("#logo").html("<img src='/shmis" + v[0].selfServerConfig.icon + "'style='height: 59px; width: 63px' />"  );
+// 			$("#marquee").html(v[0].selfServerConfig.bottomtitle);
+// // 			$('body').css('background-image','url(/shmis'+v[0].selfServerConfig.backgrondImageURL+')');
+// 			$('#zzcx_show').html(v[0].selfServerConfig.systemName);
+// 		}
+// 	    });	
+//    	}
+     function changeHtml(sel,val) {
+    	    var el = $(sel);
+    	    el.html(val);
+    	}
+    </script>
+
+    <script src="/shmis/js/selfserver/jquery.js" type="text/javascript"></script>
+
+    <script src="/shmis/js/selfserver/SelfServCmd.js" type="text/javascript"></script>
+
+    <script src="/shmis/js/selfserver/base.js" type="text/javascript"></script>
+
+    <link href="/shmis/css/selfserver/base.css" rel="stylesheet" type="text/css" />
+    <link href="/shmis/css/selfserver/CXXX.css" rel="stylesheet" type="text/css" />
+    <link href="/shmis/css/selfserver/keyBorad.css" rel="stylesheet" type="text/css" />
+
+    <script src="/shmis/js/selfserver/MsgBox.js" type="text/javascript"></script>
+
+    <script src="/shmis/js/selfserver/CXXX.js" type="text/javascript"></script>
+
+    <script src="/shmis/js/selfserver/coreKeyBorad.js" type="text/javascript"></script>
+
+    <script language="JavaScript" src="/shmis/js/selfserver/pinyin-jianti-table.js" type="text/javascript"></script>
+
+    <script language="JavaScript" src="/shmis/js/selfserver/core.js" type="text/javascript"></script>
+
+    <style>
+        BODY
+        {
+            padding-right: 0px;
+            padding-left: 0px;
+            font-size: 16px;
+            padding-bottom: 0px;
+            margin: 0px;
+            padding-top: 0px;
+        }
+    </style>
+</head>
+<body onselectstart="return false;">
+<div id="logo" style="position:absolute; top: 10px; left: 4px;"><img src="/shmis/images/selfserver/logo.png" style="height: 59px; width: 63px" /></div>
+    <div id="xtmc" 
+        style="position:absolute; top: 6px; left: 68px;  font-family:微软雅黑;font-size:28px; color:White;">杭州市房产档案馆</div>
+    <div id="show" 
+        style="position:absolute; top: 44px; left: 107px; font-family:微软雅黑;font-size:18px; height: 34px; color:White">房产档案 服务民生</div>
+    <div id="zzcx_show"        
+        
+        style="position:absolute; top: 19px; left: 485px; font-family:微软雅黑;font-size:28px; height: 34px; color:White;text-align:right; width: 516px;">富阳市房产综合管理系统</div>
+    <div style="position: absolute; top: 125px; left: 101px; font-family: 微软雅黑; font-size: 28px;
+        font-weight: bold">
+        被查询人信息列表：<div style="font-family: 微软雅黑; font-size: 18px; font-weight: lighter">
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、下列列表中不作为被查询人的，请点击“删除”按钮。<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、需要增加其他被查询人的，请在身份证感应区刷取被查询人二代身份证。<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、需要增加未成年子女的，请点击“增加未成年人”按钮。</div>
+    </div>
+    <!--<div id="timeoutbox" style="display:block;">将在<span id="outsec">00</span>秒后自动退出</div>-->
+    <div id="btn">
+        <div class="btncontent">
+            开始查询</div>
+    </div>
+    <div id="btnBackSY">
+        <div class="btncontent">
+            返回首页</div>
+    </div>
+    <div id="btnAddcnr" onclick="addcnr_fun()">
+        <img src="/shmis/images/selfserver/bnt_cnr.png" width="165" height="50" style="cursor: pointer;" /></div>
+    <div id="btnAddwcnr" onclick="addwcnr_fun()">
+        <img src="/shmis/images/selfserver/bnt_wcnr.png" style="cursor: pointer;" width="165" height="50" /></div>
+    <div id="addInfo">
+        <input type="text" value="" id="edit_area" onclick="checkid='edit_area';language='CH';wnd_show('CH',11);"
+            style="position: absolute; left: 85px; top: 7px; height: 41px; width: 159px;
+            font-family: 微软雅黑; font-size: 22px; text-align: center; vertical-align: middle;
+            line-height: 26px; font-size: 20px;" />
+        <input type="text" value="" id="edit_code" onclick="checkid='edit_code';language='EN';wnd_show('EN',11);"
+            style="position: absolute; left: 406px; top: 7px; height: 41px; width: 250px;
+            font-family: 微软雅黑; font-size: 22px; text-align: center; vertical-align: middle;
+            line-height: 26px; font-size: 20px;" />
+        <div id="zj" onclick="add_user()" style="position: absolute; width: 124px; height: 44px;
+            left: 678px; top: 4px; cursor: pointer;">
+        </div>
+        <div id="qx" onclick="qx()" style="position: absolute; width: 124px; height: 44px;
+            left: 815px; top: 5px; cursor: pointer;">
+        </div>
+    </div>
+    <div id="tab">
+        <table>
+            <tr>
+                <td class="deleteImg">
+                    <table style="width: 670px;">
+                        <tr>
+                            <td class="t1">
+                            </td>
+                            <td class="t2">
+                            </td>
+                            <td class="t3">
+                            </td>
+                            <td class="t4">
+                                &nbsp;
+                            </td>
+                            <td class="t5">
+                            </td>
+                        </tr>
+                    </table>
+                </td><td>
+            sadfasdfsadfasdf
+        </td>
+            </tr>
+        </table>
+        </td>
+        </tr></table>
+    </div>
+    <div id="kb">
+    </div>
+    <div id="checksh">
+    </div>
+    <input style="display: none;" type="hidden" readonly="readonly" value="" id="SHTEXT" />
+</body>
+
+<script language="javascript">
+ 	var checkid="edit_area";
+    var KB = new JSKB;
+    var language="EN";
+	
+</script>
+
+</html>

@@ -1,0 +1,42 @@
+﻿body 
+{
+	background-image:url(/shmis/images/selfserver/05.png);
+	background-repeat:no-repeat;
+	width:1024px;
+	height:768px;
+	font-family:微软雅黑;
+}
+
+#btn
+{
+	position:absolute;
+	background-image:url('/shmis/images/selfserver/btn.jpg');
+	background-repeat:no-repeat;
+	top: 220px;
+	left: 805px;
+	width: 165px;
+	height: 50px;
+	cursor:pointer;
+}
+
+
+#btnNo
+{
+	position:absolute;
+	background-image:url('/shmis/images/selfserver/btn.jpg');
+	background-repeat:no-repeat;
+	top: 308px;
+	left: 805px;
+	width: 165px;
+	height: 50px;
+	cursor:pointer;
+}
+
+#tx
+{
+	position:absolute;
+	top: 212px;
+	left: 161px;
+	width: 584px;
+	height: 437px;
+}

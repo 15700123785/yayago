@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>无标题页</title>
+
+    <script src="js/jquery.js" type="text/javascript"></script>
+
+    <script src="js/SelfServCmd.js" type="text/javascript"></script>
+
+    <script src="js/base.js" type="text/javascript"></script>
+
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/CXXX.css" rel="stylesheet" type="text/css" />
+    <link href="css/keyBorad.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/MsgBox.js" type="text/javascript"></script>
+
+    <script src="js/addwcnr.js" type="text/javascript"></script>
+
+    <script src="js/coreKeyBorad.js" type="text/javascript"></script>
+
+    <script language="JavaScript" src="js/pinyin-jianti-table.js" type="text/javascript"></script>
+
+    <script language="JavaScript" src="js/core.js" type="text/javascript"></script>
+
+    <style>
+        BODY
+        {
+            padding-right: 0px;
+            padding-left: 0px;
+            font-size: 16px;
+            padding-bottom: 0px;
+            margin: 0px;
+            padding-top: 0px;
+        }
+        
+    </style>
+</head>
+<body onselectstart="return false;">
+    <div id="logo" style="position:absolute; top: 10px; left: 4px;"><img src="images/logo.png" style="height: 59px; width: 63px" /></div>
+    <div id="xtmc" 
+        style="position:absolute; top: 6px; left: 68px;  font-family:微软雅黑;font-size:28px; color:White;">杭州市房产档案馆</div>
+    <div id="show" 
+        style="position:absolute; top: 44px; left: 107px; font-family:微软雅黑;font-size:18px; height: 34px; color:White">房产档案 服务民生</div>
+    <div id="zzcx_show"        
+        
+        style="position:absolute; top: 19px; left: 485px; font-family:微软雅黑;font-size:28px; height: 34px; color:White;text-align:right; width: 516px;">富阳市房产综合管理系统</div>
+    <!--<div id="timeoutbox" style="display:block;">将在<span id="outsec">00</span>秒后自动退出</div>-->
+    <div style="position:absolute; top: 125px; left: 77px; font-family:微软雅黑; font-size:28px;font-weight:bold; width: 857px;">
+        请输入未成年子女身份信息：<div style="font-weight:normal; font-size:18px;"> 温馨提示：<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为保护未成年人的权益，本界面录入的未成年子女的姓氏须至少与其中一个成年被查询人相同，否则本系统将不支持查询，请至窗口受理，敬请谅解。</div>
+</div>
+    <div id="btn" onmouseover="add_user();">
+        <div class="btncontent">
+            确定</div>
+    </div>
+    <div id="btnBack">
+        <div class="btncontent" onclick="toUrl('CXXX.html');">
+            返回</div>
+    </div>
+    <div style="display:none;" id="btnAddcnr" onclick="addcnr_fun()">
+        <img src="images/bnt_cnr.png" width="165" height="50" style="cursor: pointer;" /></div>
+    <div style="display:none;"  id="btnAddwcnr" onclick="addwcnr_fun()">
+        <img src="images/bnt_wcnr.png" style="cursor: pointer;" width="165" height="50" /></div>
+    <div id="addInfo" style="display:block">
+        <input type="text" value="" id="edit_area" onclick="checkid='edit_area';language='CH';wnd_show('CH',11);"
+            style="position: absolute; left: 85px; top: 7px; height: 41px;line-height:41px; width: 159px; font-family:微软雅黑;font-size:22px;text-align:center;vertical-align:middle;
+            font-size: 20px;" />
+        <input type="text" value="" id="edit_code" onclick="checkid='edit_code';language='EN';wnd_show('EN',11);"
+            style="position: absolute; left: 406px; top: 7px; height: 41px;line-height:41px; width: 250px; font-family:微软雅黑;font-size:22px;text-align:center;vertical-align:middle;
+             font-size: 20px;" />
+        <!--<div id="zj" onclick="add_user()">增加
+        </div>-->
+        <div id="qx" onclick="qx()">清空
+        </div>
+    </div>
+    <div id="tab">
+       
+    </div>
+    <div id="kb">
+    </div>
+    <div id="checksh">
+    </div>
+    <input style="display: none;" type="hidden" readonly="readonly" value="" id="SHTEXT" />
+</body>
+
+<script language="javascript">
+    var checkid="edit_area";
+    var KB = new JSKB;
+    var language="EN";
+	
+</script>
+
+</html>

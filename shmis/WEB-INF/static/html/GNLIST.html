@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>无标题页</title>
+     <script type="text/javascript">
+//      window.onload = function () {
+// 	$.ajax({
+// 		url:"/shmis/background/selfservermanager/data/",
+// 		data:{
+// 		   code:'hz8080'
+// 		}, 
+// 		success:function(v) {
+// // 			console.log(v);
+// 			changeHtml("#xtmc",v[0].selfServerConfig.deptName);
+// 			changeHtml("#show",v[0].selfServerConfig.motto);
+// 			changeHtml("#hysy",v[0].selfServerConfig.welcometitle);
+// 			console.log(v[0].selfServerConfig);
+// 			$("#logo").html("<img src='/shmis" + v[0].selfServerConfig.icon + "'style='height: 59px; width: 63px' />"  );
+// 			$("#marquee").html(v[0].selfServerConfig.bottomtitle);
+// // 			$('body').css('background-image','url(/shmis'+v[0].selfServerConfig.backgrondImageURL+')');
+// 			$('#zzcx_show').html(v[0].selfServerConfig.systemName);
+// 		}
+// 	    });	
+//    	}
+     function changeHtml(sel,val) {
+    	    var el = $(sel);
+    	    el.html(val);
+    	}
+    <script src="/shmis/js/selfserver/jquery.js" type="text/javascript"></script>
+    <script src="/shmis/js/selfserver/SelfServCmd.js" type="text/javascript"></script>
+    <script src="/shmis/js/selfserver/base.js" type="text/javascript"></script>
+    <link href="/shmis/css/selfserver/base.css" rel="stylesheet" type="text/css" />
+    <link href="/shmis/css/selfserver/GNLIST.css" rel="stylesheet" type="text/css" />
+    <script src="/shmis/js/selfserver/GNLIST.js" type="text/javascript"></script>
+</head>
+<body onselectstart="return false;">
+    <div id="gnshow" style="position:absolute; top: 125px; left: 101px; font-family:微软雅黑;font-size:28px;font-weight:bold">
+        请选择查询用途、内容</div>
+    <!--<div id="timeoutbox">将在<span id="outsec">00</span>秒后自动退出</div>-->
+    <div id="btnBackSY"><div class="btncontent">返回首页</div></div>
+    
+    <div id="HKQY" onclick="gn_click('户口迁移','0')" title="开户迁移" class="gn"></div>
+    <div id="DK" onclick="gn_click('贷款','0')"  title="贷款" class="gn"></div>
+    <div id="QSJN" onclick="gn_click('契税缴纳','0')"  title="契税缴纳" class="gn"></div>
+    <div id="RX" onclick="gn_click('入学','0')" title="入学" class="gn"></div>
+    <div id="TC" onclick="gn_click('停车','0')" title="停车" class="gn"></div>
+    <div id="FGXX" onclick="gn_click('房改','3')" title="房改信息" class="gn"></div>
+    <div id="FWJBXX" style="display:none;" onclick="gn_click('房屋基本信息查询','5')" title="房屋基本信息查询" class="gn"></div>
+    <div id="FWQSXX" onclick="gn_click('房屋权属信息查询','6')" title="房屋权属信息查询" class="gn"></div>
+    <div id="FWTXXZ" style="display:none;" onclick="gn_click('房屋他项限制状况','7')" title="房屋他项限制状况" class="gn"></div>
+    <div id="fwjbxx" style="display:none;">
+        <div style="position:absolute; top: 37px; left: 8px; width: 147px;">针对某具体房屋的坐落、面积、层数、规划用途等。</div></div>
+    <div style="position:absolute; top: 540px; left: 435px; width: 158px; height: 149px;"  
+        class="fwxx"><div style="position:absolute; top: 37px; left: 8px;">针对某具体房屋的坐落、所有权证号、所有权人、登记时间等。</div></div>
+    <div style="position:absolute;display:none; top: 541px; left: 605px; width: 164px; height: 150px;" 
+    class="fwxx"><div style="position:absolute; top: 37px; left: 8px; height: 108px;">针对某具体房屋的坐落、他项权证号、他项权人、查封机关、查封期限等。</div></div>
+</body>
+</html>

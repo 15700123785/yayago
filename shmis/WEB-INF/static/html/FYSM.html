@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>无标题页</title>
+     <script type="text/javascript">
+//      window.onload = function () {
+// 	$.ajax({
+// 		url:"/shmis/background/selfservermanager/data/",
+// 		data:{
+// 		   code:'hz8080'
+// 		}, 
+// 		success:function(v) {
+// // 			console.log(v);
+// 			changeHtml("#xtmc",v[0].selfServerConfig.deptName);
+// 			changeHtml("#show",v[0].selfServerConfig.motto);
+// 			changeHtml("#hysy",v[0].selfServerConfig.welcometitle);
+// // 			console.log(v[0].selfServerConfig);
+// 			$("#logo").html("<img src='/shmis" + v[0].selfServerConfig.icon + "'style='height: 59px; width: 63px' />"  );
+// 			$("#marquee").html(v[0].selfServerConfig.bottomtitle);
+// // 			$('body').css('background-image','url(/shmis'+v[0].selfServerConfig.backgrondImageURL+')');
+// 			$('#zzcx_show').html(v[0].selfServerConfig.systemName);
+// 		}
+// 	    });	
+//    	}
+     function changeHtml(sel,val) {
+    	    var el = $(sel);
+    	    el.html(val);
+    	}
+
+    <script src="/shmis/js/selfserver/jquery.js" type="text/javascript"></script>
+
+    <script src="/shmis/js/selfserver/SelfServCmd.js" type="text/javascript"></script>
+
+    <script src="/shmis/js/selfserver/base.js" type="text/javascript"></script>
+
+    <link href="/shmis/css/selfserver/base.css" rel="stylesheet" type="text/css" />
+    <link href="/shmis/css/selfserver/SM.css" rel="stylesheet" type="text/css" />
+
+    <script src="/shmis/js/selfserver/SM.js" type="text/javascript"></script>
+
+</head>
+<body onselectstart="return false;">
+    <div id="logo" style="position:absolute; top: 10px; left: 4px;"><img src="/shmis/images/selfserver/logo.png" style="height: 59px; width: 63px" /></div>
+    <div id="xtmc" 
+        style="position:absolute; top: 6px; left: 68px;  font-family:微软雅黑;font-size:28px; color:White;">杭州市房产档案馆</div>
+    <div id="show" 
+        style="position:absolute; top: 44px; left: 107px; font-family:微软雅黑;font-size:18px; height: 34px; color:White">房产档案 服务民生</div>
+    <div id="zzcx_show"        
+        
+        style="position:absolute; top: 19px; left: 485px; font-family:微软雅黑;font-size:28px; height: 34px; color:White;text-align:right; width: 516px;">富阳市房产综合管理系统</div>
+    <!--<div id="timeoutbox">将在<span id="outsec">00</span>秒后自动退出</div>-->
+    <div id="btn">
+        <div class="btncontent">
+            我同意</div>
+    </div>
+    <div id="btnNo">
+        <div class="btncontent">
+            我不同意</div>
+    </div>
+    <div id="smtext">
+        <table style="width: 100%; font-family: 微软雅黑; font-size: 17px;">
+            <tr style="height: 20px;">
+                <td style="text-align: center; font-family: 微软雅黑; font-size: 25px;">
+                    <div>
+                        风险提示</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    尊敬的用户：
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您好！您在使用本自助查询系统（以下简称查询系统）之前，请仔细阅读本提示，您也可选择是否使用自助查询系统的服务。一旦使用，即视为您已经对本提示以下内容的知悉和认可，并承担可能出现的风险。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一、用户查询，由权利人凭公安机关核发的二代身份证在自助查询系统查询相关信息。若权利人委托他人查询，由受委托人持权利人的二代身份证进行查询。但因委托查询所导致的一切后果和责任，由委托人自行负责并承担。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二、为保证服务安全和权利人的合法权益，查询系统会对用户进行拍照存档备案。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三、用户应当对查询结果自行承担风险，妥善保管并合法使用。本单位不承担因用户的查询行为，所产生的任何直接、间接、附带或衍生的损失和责任。若用户将查询所得信息用于不正当的用途，由此导致的一切法律后果由用户自行承担。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;四、本查询系统系根据富阳市房产综合管理系统设置。查询范围系根据《房屋登记办法》（建设部令168号）已办理登记的，富阳范围内的房屋权属登记信息、商品房预售合同备案信息。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;五、本查询系统仅支持二代身份证查询。其他以非身份证号码登记的或与用户提供的二代身份证号码不一致的房屋登记信息，本查询系统不提供服务。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;六、对本查询系统提供的服务信息有异议或查询系统发生故障的，用户可向本单位人工查询窗口咨询。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;七、以上提示中的用户包括权利人和受托人。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;八、用户在使用本查询系统时应当妥善和友好使用，不得故意损坏查询设备。否则，行为人将承担赔偿责任。情节严重的，依法承担刑事责任。
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎使用自助查询系统！
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    富阳市房地产管理处&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

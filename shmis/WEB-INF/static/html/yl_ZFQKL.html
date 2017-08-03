@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>无标题页</title>
+     <script type="text/javascript">
+//      window.onload = function () {
+// 	$.ajax({
+// 		url:"/shmis/background/selfservermanager/data/",
+// 		data:{
+// 		   code:'hz8080'
+// 		}, 
+// 		success:function(v) {
+// // 			console.log(v);
+// 			changeHtml("#xtmc",v[0].selfServerConfig.deptName);
+// 			changeHtml("#show",v[0].selfServerConfig.motto);
+// 			changeHtml("#hysy",v[0].selfServerConfig.welcometitle);
+// // 			console.log(v[0].selfServerConfig);
+// 			$("#logo").html("<img src='/shmis" + v[0].selfServerConfig.icon + "'style='height: 59px; width: 63px' />"  );
+// 			$("#marquee").html(v[0].selfServerConfig.bottomtitle);
+// // 			$('body').css('background-image','url(/shmis'+v[0].selfServerConfig.backgrondImageURL+')');
+// 			$('#zzcx_show').html(v[0].selfServerConfig.systemName);
+// 		}
+// 	    });	
+//    	}
+     function changeHtml(sel,val) {
+    	    var el = $(sel);
+    	    el.html(val);
+    	}
+    </script>
+    <script src="/shmis/js/selfserver/jquery.js" type="text/javascript"></script>
+    <script src="/shmis/js/selfserver/SelfServCmd.js" type="text/javascript"></script>
+    <script src="/shmis/js/selfserver/base.js" type="text/javascript"></script>
+    <link href="/shmis/css/selfserver/base.css" rel="stylesheet" type="text/css" />
+    <link href="/shmis/css/selfserver/ZFQKL.css" rel="stylesheet" type="text/css" />
+    <script src="/shmis/js/selfserver/MsgBox.js" type="text/javascript"></script>
+    <script src="/shmis/js/selfserver/choose.js" type="text/javascript"></script>
+    <script src="/shmis/js/selfserver/yl_ZFQKL.js" type="text/javascript"></script>
+
+</head>
+<body onselectstart="return false;">
+<div id="logo" style="position:absolute; top: 10px; left: 4px;"><img src="/shmis/images/selfserver/logo.png" style="height: 59px; width: 63px" /></div>
+    <div id="xtmc" 
+        style="position:absolute; top: 6px; left: 68px;  font-family:微软雅黑;font-size:28px; color:White;">杭州市房产档案馆</div>
+    <div id="show" 
+        style="position:absolute; top: 44px; left: 107px; font-family:微软雅黑;font-size:18px; height: 34px; color:White">房产档案 服务民生</div>
+    <div id="zzcx_show"        
+        
+        style="position:absolute; top: 19px; left: 485px; font-family:微软雅黑;font-size:28px; height: 34px; color:White;text-align:right; width: 516px;">富阳市房产综合管理系统</div>
+    <!--<div id="timeoutbox">将在<span id="outsec">00</span>秒后自动退出</div>-->
+    <div id="btnyyqh"><div class="btncontent">异议取号</div></div>
+<div id="btncsry"><div class="btncontent">返回列表</div></div>
+<div id="btnPrint"><div class="btncontent">打印当前</div></div>
+<!--<div id="btnPrintAll"><div class="btncontent">打印全部</div></div>-->
+<!--    <div id="BackSY" onclick="" class="BackSY"><div class="btncontent">返回首页</div></div>-->
+    <div id="sqrxm"></div> 
+<div id="sfzhm"></div>
+    <div id="zfqkcxjl" onmousemove="test(event,'zfqkcxjl')" onmousedown="getXY();"></div>
+<div id="down">下一页</div>
+<div id="up">上一页</div>
+<div id="showPageCount" style="position:absolute; top: 422px; left: 938px;font-size:15px;font-family:微软雅黑;"></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿body 
+{
+	background-image:url(/shmis/images/selfserver/04.png);
+	background-repeat:no-repeat;
+	width:1024px;
+	height:768px;
+	font-family:微软雅黑;
+}
+
+#btn
+{
+	position:absolute;
+	background-image:url('/shmis/images/selfserver/bnt_cnr.png');
+	background-repeat:no-repeat;
+	top: 687px;
+	left: 563px;
+	width: 165px;
+	height: 50px;
+	cursor:pointer;
+}
+
+
+#btnNo
+{
+	position:absolute;
+	background-image:url('/shmis/images/selfserver/bnt_cnr.png');
+	background-repeat:no-repeat;
+	top: 688px;
+	left: 793px;
+	width: 165px;
+	height: 50px;
+	cursor:pointer;
+}

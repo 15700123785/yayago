@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>无标题页</title>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/SelfServCmd.js" type="text/javascript"></script>
+    <script src="js/base.js" type="text/javascript"></script>
+    <script src="js/PZkeyBorad.js" type="text/javascript"></script>
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    <link href="css/ht.css" rel="stylesheet" type="text/css" />
+    <script src="js/MsgBox.js" type="text/javascript"></script>
+    <script src="js/ht.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    <div id="backContent">
+        <table style="width: 80%">
+            <tr>
+                <td style="height:50px;" colspan="3">
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align:left;height:80px;">
+                    <div class="btn" onclick="return window.external.closeWnd();">关闭程序</div>
+                </td>
+            </tr>
+	   
+            <tr>
+                <td style="width:153px;height:80px;">
+                    <div id="zzslsz" class="btn">纸张数量设置</div>
+                </td>
+                <td style="width:140px;text-align:right;">
+                    剩余纸张数量：
+                </td>
+                <td style="vertical-align:middle;text-align:left;">
+                    <input id="syzzsl" onfocus="OpenKey('syzzsl','请输入票证数量');"  type="text" style="width:200px;height:40px;line-height:40px;font-size:28px;font-family:微软雅黑;text-align:center;" />
+                </td>
+                <td>
+                    <div id="Reset" class="btn">纸张数量重置</div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:153px;height:80px;">
+                    <div id="passwordbtn" class="btn">密码修改</div>
+                </td>
+                <td style="text-align:right;">
+                    新密码：
+                </td>
+                <td style="vertical-align:middle;text-align:left;">
+                    <input id="password" onfocus="OpenKey('password','请输入新密码');"   type="text" style="width:200px;height:40px;line-height:40px;font-size:28px;font-family:微软雅黑;text-align:center;" />
+                </td>
+            </tr>
+ 	    <tr>
+                <td style="text-align:left;height:80px;">
+                    <div id="gjhcq" class="btn">关机或重启</div>
+                </td>
+		<td style="width:140px;text-align:right;">
+                    输入操作码: 
+                </td>
+                <td style="vertical-align:middle;text-align:left;">
+                    <input id="srczm" onfocus="OpenKey('srczm','1：关机2：重启');"  type="text" style="width:200px;height:40px;line-height:40px;font-size:28px;font-family:微软雅黑;text-align:center;" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="btnBackSY" onclick="toback();"><div class="btncontent">返回</div></div>
+</body>
+</html>

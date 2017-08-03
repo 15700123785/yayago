@@ -1,0 +1,162 @@
+﻿body
+{
+	background-image: url('/shmis/images/selfserver/04.png');
+	background-repeat: no-repeat;
+	width: 1024px;
+	height: 768px;
+	font-family: 微软雅黑;
+}
+#btnNext
+{
+	position: absolute;
+	background-image: url( '/shmis/images/selfserver/btn.jpg' );
+	background-repeat: no-repeat;
+	top: 689px;
+	left: 563px;
+	width: 165px;
+	height: 50px;
+	cursor: pointer;
+}
+
+#HKQY
+{
+	position: absolute;
+	top: 225px;
+	left: 97px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#DK
+{
+	position: absolute;
+	top: 226px;
+	left: 269px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#QSJN
+{
+	position: absolute;
+	top: 226px;
+	left: 438px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#RX
+{
+	position: absolute;
+	top: 226px;
+	left: 608px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#TC
+{
+	position: absolute;
+	top: 224px;
+	left: 779px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#FGXX
+{
+	position: absolute;
+	top: 394px;
+	left: 99px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#FWJBXX
+{
+	position: absolute;
+	top: 395px;
+	left: 269px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#FWQSXX
+{
+	position: absolute;
+	top: 395px;
+	left: 439px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#FWTXXZ
+{
+	position: absolute;
+	top: 395px;
+	left: 610px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#fwjbxx
+{
+	position: absolute;
+	background-image: url('/shmis/images/selfserver/fwxx.png');
+	background-repeat: no-repeat;
+	top: 541px;
+	left: 261px;
+	width: 160px;
+	height: 153px;
+}
+
+.fwxx
+{
+	position: absolute;
+	background-image: url('/shmis/images/selfserver/fwxx.png');
+	background-repeat: no-repeat;
+	top: 3px;
+	left: 73px;
+	height: 37px;
+}
+
+.tdBtn
+{
+	width:144px;
+	height:147px;
+	background-color:Red;
+	
+}
+.dtKB
+{
+	width:17px;
+}
+
+.remark
+{
+	background-image: url('/shmis/images/selfserver/fwxx.png');
+	background-repeat: no-repeat;
+	height: 140px;
+	text-align:left;
+	
+	width:160px;
+	margin-top:-5px;
+}
+
+.KBremark
+{
+	height: 140px;
+	text-align:left;
+	width:160px;
+	margin-top:-5px;
+}
+

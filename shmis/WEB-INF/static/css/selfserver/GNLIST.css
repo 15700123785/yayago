@@ -1,0 +1,116 @@
+﻿body
+{
+	background-image: url('/shmis/images/selfserver/03.png');
+	background-repeat: no-repeat;
+	width: 1024px;
+	height: 768px;
+	font-family: 微软雅黑;
+}
+
+#HKQY
+{
+	position: absolute;
+	top: 225px;
+	left: 97px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#DK
+{
+	position: absolute;
+	top: 226px;
+	left: 269px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#QSJN
+{
+	position: absolute;
+	top: 226px;
+	left: 438px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#RX
+{
+	position: absolute;
+	top: 226px;
+	left: 608px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#TC
+{
+	position: absolute;
+	top: 224px;
+	left: 779px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#FGXX
+{
+	position: absolute;
+	top: 394px;
+	left: 99px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#FWJBXX
+{
+	position: absolute;
+	top: 395px;
+	left: 269px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#FWQSXX
+{
+	position: absolute;
+	top: 395px;
+	left: 439px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#FWTXXZ
+{
+	position: absolute;
+	top: 395px;
+	left: 610px;
+	width: 146px;
+	height: 147px;
+	cursor: pointer;
+}
+
+#fwjbxx
+{
+	position: absolute;
+	background-image: url('/shmis/images/selfserver/fwxx.png');
+	background-repeat: no-repeat;
+	top: 541px;
+	left: 261px;
+	width: 160px;
+	height: 153px;
+}
+
+.fwxx
+{
+	position: absolute;
+	background-image: url('/shmis/images/selfserver/fwxx.png');
+	background-repeat: no-repeat;
+}

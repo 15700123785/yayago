@@ -1,0 +1,4 @@
+[2017/7/13 8:45:17];[未知];[House];[];[无法连接到远程服务器];[0];[==GetJson==];[]
+[2017/7/13 8:45:17];[未知];[House];[];[DeserializeObject erro];[0];[==GetBaseApp==];[]
+[2017/7/13 8:45:17];[未知];[House];[];[System.NullReferenceException: 未将对象引用设置到对象的实例。    在 House.house.InitSettings(String jsonstr)    在 House.house.GetBaseApp(String zzjid， String tempUrl1)];[2];[==InitSettings==];[]
+[2017/7/13 8:45:17];[未知];[House];[];[【ok】];[0];[47];[]

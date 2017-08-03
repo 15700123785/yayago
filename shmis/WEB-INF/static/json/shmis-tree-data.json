@@ -1,0 +1,27 @@
+[{
+    id:'sysadmin',
+    text:'系统管理',
+    children:[{
+        text:'用户管理',
+        id:'usermanager',
+        leaf:true
+    },{
+        text:'修改密码',
+        id:'changePasswords',
+        leaf:true
+    }]
+},{
+    id:'sm-module',
+    text:'自助机模块',
+    children:[{
+        text:'自助机管理',
+        id:'smmanager',
+        leaf:true
+    },{
+        text:'自助机配置管理',
+        id:'smconfigmanager',
+        leaf:true
+    }]
+}
+
+]
